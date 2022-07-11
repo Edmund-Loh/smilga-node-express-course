@@ -1,8 +1,15 @@
-const num1 = 5
-const num2 = 10
+const num1 = 5;
+const num2 = 10;
 
-function addValues() {
-  console.log(`the sum is : ${num1 + num2}`)
+function autoCall() {
+  console.log("I will run when this module is imported");
 }
 
-addValues()
+function addValues() {
+  console.log(`the sum is : ${num1 + num2}`);
+}
+
+autoCall();
+
+module.exports = addValues;
+

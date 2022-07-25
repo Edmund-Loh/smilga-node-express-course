@@ -9,6 +9,10 @@ function addValues() {
   console.log(`the sum is : ${num1 + num2}`);
 }
 
+function subtractValues() {
+  console.log(`the diff is : ${num1 - num2}`);
+}
+
 autoCall();
 
 module.exports = addValues;

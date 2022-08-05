@@ -15,5 +15,5 @@ function subtractValues() {
 
 autoCall();
 
-module.exports = addValues;
+module.exports = {addValues,subtractValues}
 

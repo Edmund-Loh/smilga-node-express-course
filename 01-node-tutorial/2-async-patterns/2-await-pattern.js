@@ -1,4 +1,4 @@
-const { readFile, writeFile } = require('fs').promises
+const { readFile, writeFile, stat } = require('fs').promises
 // const util = require('util')
 // const readFilePromise = util.promisify(readFile)
 // const writeFilePromise = util.promisify(writeFile)
@@ -13,6 +13,9 @@ const start = async () => {
       { flag: 'a' }
     )
     console.log(first, second)
+    console.log("Learn something about the file...")
+    const stats = await stat('../content/first.txt')
+    console.log(stats)
   } catch (error) {
     console.log(error)
   }

@@ -1,4 +1,6 @@
+//import the express module
 const express = require('express')
+//and then invoke the express() function
 const app = express()
 
 app.get('/', (req, res) => {

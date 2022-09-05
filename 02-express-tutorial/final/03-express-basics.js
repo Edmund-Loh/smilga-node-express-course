@@ -1,5 +1,7 @@
-const express = require('express')
-const app = express()
+//const express = require('express')
+//const app = express()
+//alternatively, do this:
+const app = require('express')
 
 app.get('/', (req, res) => {
   console.log('user hit the resource')

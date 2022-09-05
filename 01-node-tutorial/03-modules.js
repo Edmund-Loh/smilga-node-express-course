@@ -8,7 +8,7 @@ const {subtractValues, addValues} = require('./07-mind-grenade');
 //const mindGrenade = require('./07-mind-grenade');
 require('./07-mind-grenade');
 
-sayHi('susan');
+sayHi('susan'); //sayHi() is the only function exported from ./05-utils
 sayHi(names.john);
 sayHi(names.peter);
 

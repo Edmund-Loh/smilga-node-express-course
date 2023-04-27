@@ -4,11 +4,12 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-  console.log('user hit the resource')
+  console.log('user hit the / resource')
   res.status(200).send('Home Page')
 })
 
 app.get('/about', (req, res) => {
+  console.log('user hit the /about resource')
   res.status(200).send('About Page')
 })
 
